@@ -46,5 +46,4 @@ spec:
     protocol: TCP
     port: 5432
     targetPort: 5432
-  externalIPs: 
-  - 10.2.0.5
+  
