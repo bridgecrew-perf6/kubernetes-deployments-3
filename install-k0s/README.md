@@ -98,9 +98,24 @@ sudo firewall-cmd --reload
 ```
 
 # configurar openebs-hostpath como storageClass por defecto
+En uno de los nodos si el pc de gestión es windows. 
+
+``` sh`
+sudo cat /var/lib/k0s/pki/admin.conf > .kube/config
+```
+Para linux
+
 ``` sh
  kubectl patch storageclass openebs-hostpath -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
  ```
+
+Para windows
+
+``` sh
+ kubectl patch storageclass openebs-hostpath -p "{\"metadata\": {\"annotations\":{\"storageclass.kubernetes.io/is-default-class\":\"true\"}}}"
+ ```
+
+
 
  Se puede comprobar su activación por defecto lanzando el siguiente comando
  ```sh

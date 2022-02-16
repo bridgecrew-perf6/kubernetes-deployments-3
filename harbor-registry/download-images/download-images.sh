@@ -1,0 +1,14 @@
+docker pull docker.io/calico/cni:v3.21.2
+docker pull docker.io/calico/kube-controllers:v3.21.2
+docker pull docker.io/calico/node:v3.21.2
+docker pull k8s.gcr.io/coredns/coredns:v1.7.0
+docker pull quay.io/k0sproject/apiserver-network-proxy-agent:0.0.27-k0s1
+docker pull k8s.gcr.io/kube-proxy:v1.23.3
+docker pull docker.io/cloudnativelabs/kube-router:v1.3.2
+docker pull quay.io/k0sproject/cni-node:0.1.0
+docker pull k8s.gcr.io/metrics-server/metrics-server:v0.5.2
+docker pull openebs/node-disk-manager:1.8.0
+docker pull openebs/provisioner-localpv:3.1.0
+docker pull openebs/node-disk-operator:1.8.0
+docker pull openebs/linux-utils:3.1.0
+docker pull openebs/node-disk-exporter:1.8.0

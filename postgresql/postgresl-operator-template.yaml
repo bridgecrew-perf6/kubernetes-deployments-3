@@ -9,9 +9,9 @@ metadata:
 #    "delete-date": "2020-08-31"  # can only be deleted on that day if "delete-date "key is configured
 #    "delete-clustername": "acid-test-cluster"  # can only be deleted when name matches if "delete-clustername" key is configured
 spec:
-  dockerImage: registry.opensource.zalan.do/acid/spilo-14:2.1-p3
+  dockerImage: registry.container.sidertia.com/postgres-operator/acid/spilo-14:2.1-p3
   teamId: "acid"
-  numberOfInstances: 3
+  numberOfInstances: 2
   users:  # Application/Robot users
     zalando:
     - superuser
@@ -161,7 +161,7 @@ spec:
 
   initContainers:
   - name: date
-    image: busybox
+    image: registry.container.sidertia.com/common/busybox
     command: [ "/bin/date" ]
 #  sidecars:
 #   - name: "telegraf-sidecar"
