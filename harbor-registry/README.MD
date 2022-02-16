@@ -5,7 +5,7 @@
 | Prerequisto | Descripción !
 |-------------|-------------|
 | Certificado SSL | Crear un certificado SSL con una CA |
-| Nombre de dominio | Por ejemplo: registry.container.sidertia.com |
+| Nombre de dominio | Por ejemplo: registry.container.acme.com |
 
 ## Instalar docker
 
